@@ -39,7 +39,7 @@ body {
 }
 
 .main { 
-    background-color: rgb(235 239 244);;
+    background-color: rgb(235 239 244);
     grid-area:main;
     
 }
@@ -83,6 +83,7 @@ body {
     list-style:none;
     margin-top: 30px;
     margin-bottom: 30px;
+    grid-row-gap:5px;
     
     
 }
@@ -93,6 +94,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     list-style: none;
+    grid-row-gap:5px;
     
     
 }
@@ -122,3 +124,34 @@ ul.dashboard svg {
 .icon1, .icon2, .icon3, .icon4, .icon5, .icon6 { 
     justify-self: center;
 }
+
+
+/* Header styling*/
+
+.header { 
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.topheader { 
+    display:grid; 
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr ;
+    padding:10px;
+}
+
+input#search { 
+    width:80%;
+    height:50%;
+    border-radius: 10px;
+    background-color: rgb(235 239 244);
+
+}
+
+.searchIcon svg, .subscribeIcon svg  { 
+    height:20px; 
+    width:auto;
+    margin-left:80%;
+    
+}
+
