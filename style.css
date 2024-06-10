@@ -136,22 +136,65 @@ ul.dashboard svg {
 
 .topheader { 
     display:grid; 
-    grid-template-columns: 1fr 6fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 6fr 3fr ;
     padding:10px;
+    align-items: center;
 }
+
+.iconscontainer { 
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    
+
+}
+
+div.subscribeIcon { 
+    justify-self: end;
+}
+
 
 input#search { 
     width:80%;
-    height:50%;
+    height:30px;
     border-radius: 10px;
-    background-color: rgb(235 239 244);
+    background-color: rgb(207, 214, 223);
+    border:none;
 
 }
 
-.searchIcon svg, .subscribeIcon svg  { 
+.searchIcon svg  { 
     height:20px; 
     width:auto;
     margin-left:80%;
     
+}
+
+.subscribeIcon svg {
+    height:30px; 
+    width:auto;
+    
+}
+
+div.guitarIcon-container { 
+    justify-self: center;
+}
+
+.guitarIcon { 
+    background-color:rgb(199, 116, 255);
+    border-radius:95px;
+    justify-self: center;
+}
+
+.guitarIcon svg { 
+    height:50px; 
+    width:auto;
+}
+
+.toplogo-text {
+
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
 }
 
